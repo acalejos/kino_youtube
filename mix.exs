@@ -10,7 +10,6 @@ defmodule KinoYoutube.MixProject do
       deps: deps(),
       description:
         "A simple Kino that wraps the YouTube Embedded iFrame API to render a YouTube player in a Livebook.",
-      license: "LICENSE.md",
       source_url: "https://github.com/acalejos/kino_youtube",
       homepage_url: "https://github.com/acalejos/kino_youtube",
       package: package()
