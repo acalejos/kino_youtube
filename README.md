@@ -12,7 +12,7 @@ by adding `kino_youtube` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:kino_youtube, "~> 0.1.0"}
+    {:kino_youtube, "~> 0.1"}
   ]
 end
 ```
