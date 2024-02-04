@@ -1,10 +1,12 @@
 # KinoYoutube
 
-**TODO: Add description**
+This Kino consists of only one function, `KinoYouTube.new/2`.
+
+Refer to the [YouTube documentation](https://developers.google.com/youtube/player_parameters#Parameters) for a list of accepted parameters
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+The package can be installed
 by adding `kino_youtube` to your list of dependencies in `mix.exs`:
 
 ```elixir
