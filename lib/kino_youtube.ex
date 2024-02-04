@@ -8,7 +8,6 @@ defmodule KinoYouTube do
   Refer to the [YouTube documentation](https://developers.google.com/youtube/player_parameters#Parameters) for a list of accepted parameters
   """
   use Kino.JS
-  use Kino.JS.Live
 
   @valid_params %{
     autoplay: [0, 1],
@@ -82,17 +81,7 @@ defmodule KinoYouTube do
     <iframe width="#{width}" height="#{height}" src="https://www.youtube.com/embed/#{video_id}?#{param_str}" title="Kino YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     """
 
-    Kino.JS.Live.new(__MODULE__, iframe, params)
-  end
-
-  @impl true
-  def init(iframe, ctx) do
-    {:ok, assign(ctx, iframe: iframe)}
-  end
-
-  @impl true
-  def handle_connect(ctx) do
-    {:ok, ctx.assigns.iframe, ctx}
+    Kino.JS.new(__MODULE__, iframe)
   end
 
   asset "main.js" do
